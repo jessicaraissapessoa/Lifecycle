@@ -19,6 +19,8 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <include layout="@layout/content_main"/>
+
     <TextView
         android:id="@+id/counter"
         android:layout_width="match_parent"

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
 import br.com.jessicaraissapessoa.navigation.navigation.lifecycle.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,11 +24,12 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        binding.counter.text = viewModel.counter.toString()
+        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            viewModel.increment()
-            binding.counter.text = viewModel.counter.toString()
+            //TODO
         }
     }
 
