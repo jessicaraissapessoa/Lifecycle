@@ -1,4 +1,4 @@
-package br.com.jessicaraissapessoa.navigation.navigation.lifecycle
+package br.com.jessicaraissapessoa.navigation.navigation.lifecycle.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData

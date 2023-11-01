@@ -8,6 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import br.com.jessicaraissapessoa.navigation.navigation.lifecycle.databinding.ActivityMainBinding
+import br.com.jessicaraissapessoa.navigation.navigation.lifecycle.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
 
